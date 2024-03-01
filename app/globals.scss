@@ -111,3 +111,28 @@ a, h1, h2, h3, h4, h5, h6, p {
   flex-direction: column;
   opacity: 1;
 }
+
+.faq {
+  opacity: 0.95;
+  border-bottom: 2px solid var(--clr-neutral-white, #FCFEFE);
+  padding: 9px 4px;
+
+}
+
+.faq {
+  transition: .5s ease;
+}
+
+.faq p {
+    opacity: 0;
+    height: 0;
+}
+
+.open > p {
+  opacity: .95;
+  height: fit-content;
+}
+
+.open > h5::after {
+  transform: rotate(-45deg);
+}

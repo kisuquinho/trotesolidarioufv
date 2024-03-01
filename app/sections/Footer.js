@@ -1,4 +1,8 @@
+'use client'
+
 import styles from './Footer.module.scss'
+import FAQ from './FAQ';
+import { useState } from 'react';
 
 const partners = [
     {
@@ -56,6 +60,46 @@ const socials = [
 
 export default function Footer() {
 
+    const [faqs, setFaqs] = useState([
+        {
+          question: "Quais alimentos e produtos podem ser doados?",
+          answer:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+          open: true
+        },
+        {
+          question: "Posso participar da doação de cabelos se meu cabelo tiver química?",
+          answer: "You! The viewer!",
+          open: false
+        },
+        {
+          question:
+            "A cor do cabelo importa?",
+          answer: "This many!",
+          open: false
+        },
+        {
+          question:
+            "Posso levar uma mecha previamente cortada?",
+          answer: "This many!",
+          open: false
+        }
+    ]);
+
+    const toggleFAQ = index => {
+        setFaqs(
+          faqs.map((faq, i) => {
+            if (i === index) {
+              faq.open = !faq.open;
+            } else {
+              faq.open = false;
+            }
+    
+            return faq;
+          })
+        );
+    };
+
     return (
         <footer className={styles.footer}>
             <section className={styles.head}>
@@ -69,6 +113,14 @@ export default function Footer() {
                                     <a href={social.href} target="_blank" rel="noopener noreferrer" key={social.id}><img src={social.icon} alt={social.alt} /></a>
                                 )
                             })}
+                        </div>
+                    </section>
+                    <section className={styles.faq}>
+                        <h3 className={styles.title}>DÚVIDAS FREQUENTES</h3>
+                        <div className={styles.faqs}>
+                            {faqs.map((faq, index) => (
+                                <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
+                            ))}
                         </div>
                     </section>
                 </div>
