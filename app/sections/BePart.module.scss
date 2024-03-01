@@ -1,0 +1,114 @@
+.container {
+    margin: 0 auto;
+    max-width: 1208px;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--clr-neutral-black, #000);
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.topic {
+    margin: 0 auto;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 1;
+
+    &:nth-of-type(1) {
+        z-index: 3;
+    }
+
+    .subtitle {
+        font-size: 1.125rem;
+        font-weight: 600;
+        width: fit-content;
+        line-height: 140%;
+        position: relative;
+        padding-bottom: 4px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -0px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--clr-neutral-black, #000);
+        }
+    }
+
+    .paragraph {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 140%;
+        opacity: 1;
+
+        &:nth-of-type(1) {
+            z-index: 3;
+        }
+    }
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 540px;
+    justify-content: center;
+    gap: 16px;
+
+    .required {
+        padding: 12px 24px;
+        border: 1px solid #000;
+        background: var(--clr-primary-goldenrod, #EDAC13);
+        box-shadow: 4px 4px 0px 0px #000;
+        color: var(--clr-neutral-white, #FCFEFE);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+.modal {
+    display: inline;
+    position: relative;
+    z-index: 3;
+}
+
+.modal_span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.items {
+    border-radius: 2px;
+    z-index: 5;
+    padding: 24px;
+    color: var(--clr-neutral-white, #FCFEFE);
+    background-color: var(--clr-neutral-black, #000);
+    display: none;
+    opacity: 0;
+    list-style: square;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.li {
+    text-align: start;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 8px;
+}

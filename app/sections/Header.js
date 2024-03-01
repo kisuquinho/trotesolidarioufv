@@ -1,0 +1,34 @@
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+import styles from './Header.module.scss';
+import Button from '../components/Button';
+
+export default function Header() {
+
+    const pathName = usePathname()
+
+    const hrefHome = "/";
+    const hrefEdicao2023 = "/edicao2023";
+    const hrefSobre = "/sobre"
+    const hrefContato = "/contato";
+
+    return (
+        <header className={styles.header}>
+            <div className={styles.container}>
+                <nav className={styles.nav}>
+                    <Link href={hrefHome} className={pathName === hrefHome ? 'active' : 'disabled'}>Trote Solidário 2024</Link>
+                    {/* <div className={styles.divider}></div>
+                    <Link href={hrefEdicao2023} className={pathName === hrefEdicao2023 ? 'active' : 'disabled'}>Edição 2023</Link>
+                    <div className={styles.divider}></div>
+                    <Link href={hrefSobre} className={pathName === hrefSobre ? 'active' : 'disabled'}>Sobre</Link>
+                    <div className={styles.divider}></div>
+                    <Link href={hrefContato} className={pathName === hrefContato ? 'active' : 'disabled'}>Contato</Link> */}
+                </nav>
+                <Button section='header' href='#contribute'>Como contribuir?</Button>
+            </div>
+        </header>
+    )
+}

@@ -1,0 +1,32 @@
+.header {
+    color: var(--clr-neutral-white, #FCFEFE);
+    border-bottom: 2px solid var(--clr-neutral-black, #000);
+    background: var(--clr-primary-crimson, #F63A50);
+    display: flex;
+    padding: 12px 0px;
+    position: fixed;
+    z-index: 7;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1208px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.divider {
+    width: 2px;
+    height: 20px;
+    background-color: var(--clr-neutral-white);
+}
