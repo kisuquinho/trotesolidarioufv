@@ -1,5 +1,6 @@
 import styles from './Hero.module.scss'
 import Button from '../components/Button'
+import Image from 'next/image'
 
 export default function Hero() {
     return (
@@ -21,7 +22,14 @@ export default function Hero() {
                     <Button section="main" href="https://docs.google.com/forms/d/e/1FAIpQLSdGHOrJ6Hx47A0DiRrMsAIs0AgJqRG_mhdGLpcdGI9nv__tNA/viewform" target="_blank">Agendar minha doação de cabelo</Button>
                 </div>
             </div>
-            <img src="/bgufv.png" alt="UFV" className={styles.bg} />
+            {/* <img src="/bgufv.png" alt="UFV" className={styles.bg} /> */}
+            <Image
+            src="/bgufv.png"
+            fill={true}
+            alt="UFV"
+            style={{objectFit: "cover", zIndex: "-1"}}
+            priority={true}
+            />
             <div className={styles.overlay}></div>
         </main>
     )

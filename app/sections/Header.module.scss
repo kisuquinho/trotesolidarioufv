@@ -30,3 +30,13 @@
     height: 20px;
     background-color: var(--clr-neutral-white);
 }
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 0 32px;
+    }
+    
+    .nav {
+        display: none;
+    }
+}

@@ -112,3 +112,32 @@
     font-weight: 400;
     margin-left: 8px;
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 64px 24px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .paragraph {
+        font-size: 0.8rem;
+    }
+
+    .img {
+        object-fit: contain;
+        width: 28.8px;
+    }
+
+    .btns {
+        .required {
+            padding: 8px 16px;
+        }
+    }
+}
