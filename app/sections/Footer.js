@@ -63,7 +63,7 @@ export default function Footer() {
     const [faqs, setFaqs] = useState([
         {
           question: "Quais alimentos e produtos podem ser doados?",
-          answer: "As doações aceitas para a APOV são: leite, óleo, feijão, arroz, farinha de trigo, achocolatado, polpa de suco concentrado, fermento, amido de milho, triguinho (trigo kibe), macarrão, detergente, desinfetante, álcool líquido, bucha de pia, água sanitária, papel higiênico, perfex, coco ralado, extrato de tomate e biscoito.",
+          answer: "As doações aceitas para a APOV são: leite, óleo, feijão, arroz, farinha de trigo, achocolatado, polpa de suco concentrado, fermento, amido de milho, triguilho (trigo kibe), macarrão, detergente, desinfetante, álcool líquido, bucha de pia, água sanitária, papel higiênico, perfex, coco ralado, extrato de tomate e biscoito.",
           open: false
         },
         {
@@ -126,7 +126,7 @@ export default function Footer() {
             </section>
             <section className={styles.foot}>
                 <div className={styles.container}>
-                    <p className={styles.info}><strong className={styles.bold}>Trote Solidário©2024</strong>, um site desenvolvido por <a className={styles.bold} href="">Joyci.</a></p>
+                    <p className={styles.info}><strong className={styles.bold}>Trote Solidário©2024</strong>, um site desenvolvido por <a className={styles.bold} href="https://www.behance.net/joyci" target="_blank" rel="noopener noreferrer">Joyci.</a></p>
                     <div className={styles.wrapper}>
                         {partners.map((partner) => {
                             return (

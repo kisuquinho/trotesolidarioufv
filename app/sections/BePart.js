@@ -24,6 +24,70 @@ const items = [
         id: '05',
         item: 'Farinha de trigo',
     },
+    {
+        id: '06',
+        item: 'Achocolatado',
+    },
+    {
+        id: '07',
+        item: 'Popla de suco concentrado',
+    },
+    {
+        id: '08',
+        item: 'Fermento',
+    },
+    {
+        id: '09',
+        item: 'Amido de milho',
+    },
+    {
+        id: '10',
+        item: 'Triguilho',
+    },
+    {
+        id: '11',
+        item: 'Macarrão',
+    },
+    {
+        id: '12',
+        item: 'Coco ralado',
+    },
+    {
+        id: '13',
+        item: 'Extrato de tomate',
+    },
+    {
+        id: '14',
+        item: 'Biscoito',
+    },
+    {
+        id: '15',
+        item: 'Detergente',
+    },
+    {
+        id: '16',
+        item: 'Desinfetante',
+    },
+    {
+        id: '17',
+        item: 'Álcool líquido',
+    },
+    {
+        id: '18',
+        item: 'Bucha de pia',
+    },
+    {
+        id: '19',
+        item: 'Água sanitária',
+    },
+    {
+        id: '20',
+        item: 'Papel higiênico',
+    },
+    {
+        id: '21',
+        item: 'Perfex',
+    },
 ]
 
 function openModal() {
