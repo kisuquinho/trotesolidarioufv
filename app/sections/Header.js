@@ -11,13 +11,14 @@ export default function Header() {
     const pathName = usePathname()
 
     const hrefHome = "/";
-    const hrefEdicao2023 = "/edicao2023";
+    // const hrefEdicao2023 = "/edicao2023";
     const hrefSobre = "/sobre"
     const hrefContato = "/contato";
 
     return (
         <header className={styles.header}>
             <div className={styles.container}>
+                <img src="" alt="LOGO" className={styles.logo}/>
                 <nav className={styles.nav}>
                     <Link href={hrefHome} className={pathName === hrefHome ? 'active' : 'disabled'}>Trote Solidário 2024</Link>
                     <div className={styles.divider}></div>
@@ -28,6 +29,7 @@ export default function Header() {
                     <Link href={hrefContato} className={pathName === hrefContato ? 'active' : 'disabled'}>Contato</Link>
                 </nav>
                 <Button section='header' href='#contribute'>Como contribuir?</Button>
+                <div className={styles.menu}></div>
             </div>
         </header>
     )

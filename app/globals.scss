@@ -113,7 +113,7 @@ a, h1, h2, h3, h4, h5, h6, p {
 }
 
 .faq {
-  opacity: 0.95;
+  opacity: 0.9;
   border-bottom: 2px solid var(--clr-neutral-white, #FCFEFE);
   padding: 9px 4px;
 
@@ -129,8 +129,8 @@ a, h1, h2, h3, h4, h5, h6, p {
 }
 
 .open > p {
-  opacity: .95;
-  height: fit-content;
+  opacity: .9;
+  height: auto;
 }
 
 .open > h5::after {

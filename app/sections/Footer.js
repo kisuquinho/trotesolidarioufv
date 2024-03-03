@@ -63,25 +63,24 @@ export default function Footer() {
     const [faqs, setFaqs] = useState([
         {
           question: "Quais alimentos e produtos podem ser doados?",
-          answer:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-          open: true
+          answer: "As doações aceitas para a APOV são: leite, óleo, feijão, arroz, farinha de trigo, achocolatado, polpa de suco concentrado, fermento, amido de milho, triguinho (trigo kibe), macarrão, detergente, desinfetante, álcool líquido, bucha de pia, água sanitária, papel higiênico, perfex, coco ralado, extrato de tomate e biscoito.",
+          open: false
         },
         {
           question: "Posso participar da doação de cabelos se meu cabelo tiver química?",
-          answer: "You! The viewer!",
+          answer: "SIM, o uso de produtos (químicos ou naturais) no cabelo não é critério de exclusão para a doação.",
           open: false
         },
         {
           question:
             "A cor do cabelo importa?",
-          answer: "This many!",
+          answer: "NÃO, reforçamos que a diversidade de cores e texturas de cabelos é de extremo valor, ppois contribui para o pertencimento de quem os recebe.",
           open: false
         },
         {
           question:
             "Posso levar uma mecha previamente cortada?",
-          answer: "This many!",
+          answer: "SIM, mas reforçamos as condições: doação mínima de 20cm e mecha seca e limpa, amarrada com elástico e armazenada em saco plástico.",
           open: false
         }
     ]);
