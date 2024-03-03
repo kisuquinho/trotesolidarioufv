@@ -1,3 +1,7 @@
+.header_wrapper {
+    position: relative;
+}
+
 .header {
     color: var(--clr-neutral-white, #FCFEFE);
     border-bottom: 2px solid var(--clr-neutral-black, #000);
@@ -80,6 +84,31 @@
         &:hover {
             background-color: lighten($color: #B514ED, $amount: 10);
             box-shadow: 4px 4px 0px 0px #000;
+        }
+    }
+
+    .navmobile {
+        color: var(--clr-neutral-white, #FCFEFE);
+        background-color: var(--clr-neutral-black, #000);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        gap: 20px;
+        text-align: center;
+        opacity: 0;
+        transition: .5s ease;
+        
+        .divider {
+            background-color: var(--clr-neutral-white, #FCFEFE);
+            height: 2px;
+            width: 75%;
         }
     }
 }

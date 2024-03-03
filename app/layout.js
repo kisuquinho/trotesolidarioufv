@@ -1,7 +1,6 @@
 import { Syne } from "next/font/google";
 import "./globals.scss";
 import Header from "./sections/Header";
-import NavMobile from "./sections/NavMobile";
 
 const syne = Syne({ subsets: ["latin"] });
 
@@ -15,7 +14,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={syne.className}>
         <Header></Header>
-        <NavMobile></NavMobile>
         {children}
         </body>
     </html>
