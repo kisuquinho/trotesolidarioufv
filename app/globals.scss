@@ -46,7 +46,7 @@ a, h1, h2, h3, h4, h5, h6, p {
   line-height: 100%;
 }
 
-.active, .disabled {
+a.active, a.disabled {
   font-size: 1rem;
   font-weight: 700;
   padding: 8px 0px;
@@ -88,7 +88,7 @@ a, h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.active {
+a.active {
   padding-left: 16px;
 
   &:hover {
@@ -135,4 +135,8 @@ a, h1, h2, h3, h4, h5, h6, p {
 
 .open > h5::after {
   transform: rotate(-45deg);
+}
+
+#navmobile.active {
+  top: 0;
 }

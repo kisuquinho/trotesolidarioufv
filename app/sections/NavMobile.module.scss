@@ -1,0 +1,30 @@
+.nav {
+    color: var(--clr-neutral-white, #FCFEFE);
+    background-color: var(--clr-neutral-black, #000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    left: auto;
+    z-index: 3;
+    gap: 20px;
+    text-align: center;
+    transition: .5s ease;
+
+    .divider {
+        background-color: var(--clr-neutral-white, #FCFEFE);
+        height: 2px;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .nav {
+        display: none;
+    }
+}

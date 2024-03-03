@@ -4,8 +4,11 @@
     background: var(--clr-primary-crimson, #F63A50);
     display: flex;
     padding: 12px 0px;
-    position: fixed;
+    position: absolute;
+    top: 0;
+    right: 0;
     z-index: 7;
+    width: 100%;
 }
 
 .container {
@@ -46,8 +49,12 @@
 }
 
 @media screen and (max-width: 640px) {
+    .header {
+        padding: 12px 0px;
+    }
+
     .container {
-        padding: 0 32px;
+        padding: 0px 12px;
     }
 
     .logo {
@@ -60,19 +67,21 @@
 
     .menu {
         display: block;
-        height: 48px;
-        width: 48px;
+        height: 40px;
+        width: 40px;
         color: var(--clr-neutral-white, #FCFEFE);
         background-color: var(--clr-primary-electric_purple, #B514ED);
         border: 2px solid var(--clr-neutral-black, #000);
         text-align: center;
         transition: .5s ease;
-    
+        border-radius: 6px;
+        box-shadow: 2px 2px 0px 0px #000;
+        background-image: url(../../assets/controler.svg);
+        background-repeat: no-repeat;
+        background-position: center;
         &:hover {
             background-color: lighten($color: #B514ED, $amount: 10);
             box-shadow: 4px 4px 0px 0px #000;
         }
-        border-radius: 6px;
-        box-shadow: 2px 2px 0px 0px #000;
     }
 }
