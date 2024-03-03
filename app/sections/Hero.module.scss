@@ -82,6 +82,7 @@
     .container {
         padding: 120px 36px;
         border-bottom: 2px solid #000;
+        gap: 12px;
     }
 
     .title {
@@ -94,5 +95,12 @@
 
     .p {
         font-size: 0.7rem;
+    }
+
+    .btn_wrapper {
+        width: 100%;
+        gap: 12px 8px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

@@ -82,3 +82,21 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 424px) {
+    .main {
+        &::after {
+            top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .bepart {
+        font-weight: 400;
+
+        &::after {
+            top: 17px;
+        }
+    }
+}
