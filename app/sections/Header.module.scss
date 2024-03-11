@@ -46,6 +46,10 @@
     display: none;
 }
 
+.navmobile {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     .container {
         padding: 0 32px;

@@ -1,4 +1,3 @@
-import styles from "./page.module.scss";
 import Hero from "./sections/Hero";
 import Overlay from "./sections/Overlay";
 import BePart from "./sections/BePart";

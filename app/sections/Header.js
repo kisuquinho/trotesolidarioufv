@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 
 import styles from './Header.module.scss';
 import Button from '../components/Button';
-import { Fragment } from 'react';
 
 export default function Header() {
 
