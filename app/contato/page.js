@@ -1,5 +1,5 @@
 export default function Contato() {
     return (
-        <h2>Em breve</h2>
+        <h2>Oi</h2>
     )
 }
