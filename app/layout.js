@@ -24,6 +24,11 @@ export const metadata = {
     title: 'Trote Solidário UFV',
     description: 'O projeto Trote Solidário UFV reúne doações de cabelos para instituições de apoio a pessoas com câncer e arrecada insumos para unidades de desenvolvimento social. O evento anual ocorre em Viçosa - Minas Gerais, em colaboração com a Universidade Federal de Viçosa (UFV)',
   },
+  verification: {
+    google: 'google',
+    yandex: 'yandex',
+    yahoo: 'yahoo',
+  },
 };
 
 export default function RootLayout({ children }) {
