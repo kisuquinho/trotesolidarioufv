@@ -6,7 +6,7 @@ const syne = Syne({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "Trote Solidário UFV | 2024",
+    default: "Trote Solidário UFV",
     template: "Trote Solidário UFV | %s"
   },
   description: "O projeto Trote Solidário UFV reúne doações de cabelos para instituições de apoio a pessoas com câncer e arrecada insumos para unidades de desenvolvimento social. O evento anual ocorre em Viçosa - Minas Gerais, em colaboração com a Universidade Federal de Viçosa (UFV)",
