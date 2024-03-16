@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Syne } from "next/font/google";
 import "./globals.scss";
 import Header from "./sections/Header";
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
         <Header></Header>
         {children}
         </body>
+        <GoogleAnalytics gaId="G-XHS9CHZ2LZ" />
     </html>
   );
 }
